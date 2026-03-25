@@ -127,48 +127,35 @@ Deployment Ready: Yes
 
 🚀 How to Run the Project
 1️⃣ Clone the Repository
-bash
-Copy code
+
 git clone https://github.com/your-username/YOLO11.git
 cd YOLO11
+
 2️⃣ Create Virtual Environment
-bash
-Copy code
+
 python -m venv venv
 source venv/bin/activate   # Linux / Mac
 venv\Scripts\activate      # Windows
+
 3️⃣ Install Dependencies
-bash
-Copy code
 pip install -r requirements.txt
 🏋️ Train the Model
-bash
-Copy code
+
 python scripts/train.py --data data/data.yaml --epochs 50 --img 640
+
 📊 Evaluate the Model
-bash
-Copy code
 python scripts/evaluate.py --weights models/yolo11.pt
-🔍 Run Inference
-Image
-bash
-Copy code
+
 python scripts/predict.py --source image.jpg
-Video
-bash
-Copy code
+
 python scripts/predict.py --source video.mp4
-Webcam
-bash
-Copy code
+
 python scripts/predict.py --source 0
+
 📈 Evaluation Metrics
 mAP (mean Average Precision)
-
 Precision
-
 Recall
-
 Confidence Score
 
 Results are saved inside the runs/ directory.
@@ -181,23 +168,18 @@ Trained model weights
 Logs & metrics
 
 🧪 Experiment Tracking
-Each training run stored with:
+Each training run is stored with:
 
 Hyperparameters
-
 Metrics
-
 Visual results
 
 🔮 Future Enhancements
 FastAPI-based inference API
 
 Docker containerization
-
 CI/CD integration
-
 Model monitoring
-
 Cloud deployment (AWS / GCP / Azure)
 
 👨‍💻 Author
